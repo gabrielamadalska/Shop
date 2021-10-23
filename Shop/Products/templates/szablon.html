@@ -1,13 +1,24 @@
+    <div>
+    <h1>LOGO    wyszukiwarka            wyloguj</h1>
+    </div>
+    <div style="clear:both"></div>
+    <div style="width:200px; float:left">
+        <h3>VEGAN POWER  </h3>
 
-    <h1>LOGO    wyszukiwarka            wyloguj         </h1>
-
-    <h3>VEGAN POWER            </h3>
-
-    {% for cat in categories %}
+        {% for cat in categories %}
 
 
-    <p><a href = "category/{{cat.id}}" > {{ cat.name }}  </a></p>
+        <p><a href = "category/{{cat.id}}" > {{ cat.name }}  </a></p>
 
 
-    {% endfor %}
+        {% endfor %}
+    </div>
+    <div style="width:700; float:left">
+        Content...
+
+    </div>
+    <div style="clear:both">
+
+    </div>
+
 
