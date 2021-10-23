@@ -57,7 +57,7 @@ ROOT_URLCONF = 'Shop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\Gabi\PycharmProjects\Shop\Shop\templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
