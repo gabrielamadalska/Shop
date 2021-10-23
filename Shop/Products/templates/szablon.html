@@ -1,0 +1,13 @@
+
+    <h1>HELLO IN THE VEGGIE SHOP      </h1>
+
+    <h3>VEGAN POWER            </h3>
+
+    {% for cat in categories %}
+
+
+    <p><a href = "category/{{cat.id}}" > {{ cat.name }}  </a></p>
+
+
+    {% endfor %}
+

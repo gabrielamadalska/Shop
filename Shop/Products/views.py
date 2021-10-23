@@ -12,8 +12,8 @@ def index(request):
     categories = Category.objects.all()
     # null = Products.objects.filter(category__isnull=True)
     # include = Products.objects.filter(description__contains='polish')
-
-    return HttpResponse( categories )
+    data = {'categories' : categories}
+    return render(request, 'szablon.html', data)
 
 def category(request, id):
 
