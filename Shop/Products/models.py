@@ -6,7 +6,7 @@ class Producer(models.Model):
     def __str__(self):
         return self.name
 
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=100)
     description = models.TextField(blank=True)
 
     class Meta:
@@ -25,8 +25,6 @@ class Category(models.Model):
         verbose_name_plural = "Categories"
 
 class Products(models.Model):
-    def __str__(self):
-        return self.name
 
     # zwraca string gdy wywołamy obiekt produktu
     # wyswietla nazwe na stronie
@@ -35,6 +33,10 @@ class Products(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=12, decimal_places=2)
+
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = "Product"
         verbose_name_plural = "Products"
