@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{product_user.id}}</title>
-</head>
-<body>
+    {% extends 'szablon.html'  %}
+
+
+
+    {%  block product  %}
+
+
+
     {%  if product_user  %}
         <h1>  {{  product_user.name  }} </h1>
         <p>   Producer: {{  product_user.producer   }} </p>
@@ -13,7 +14,5 @@
 
     {%  else  %}
         <p>Nie ma produktu</p>
-
     {%  endif  %}
-</body>
-</html>
+    {%  endblock product %}
