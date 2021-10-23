@@ -4,7 +4,7 @@ from django.db import models
 
 class Producer(models.Model):
     def __str__(self):
-        return self.name
+        return self.name + " "
 
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True)
@@ -15,7 +15,7 @@ class Producer(models.Model):
 
 class Category(models.Model):
     def __str__(self):
-        return self.name
+        return self.name + " "
 
     name = models.CharField(max_length=25)
 
@@ -35,7 +35,7 @@ class Products(models.Model):
     price = models.DecimalField(max_digits=12, decimal_places=2)
 
     def __str__(self):
-        return self.name
+        return self.name + " "
 
     class Meta:
         verbose_name = "Product"
