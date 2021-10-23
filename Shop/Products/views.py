@@ -22,11 +22,12 @@ def category(request, id):
 
 def product(request, id):
     product_user = Products.objects.get(pk=id)
-    data = {'product_user' : product_user}
+    categories = Category.objects.all()
+    data = {'product_user' : product_user, 'categories' : categories}
     return render(request, 'product.html', data)
 
 
-    return HttpResponse(caption)
+    #return HttpResponse(caption)
 
 
     # caption = "<h1>" + str(product_user.name) +"</h1>" + \
